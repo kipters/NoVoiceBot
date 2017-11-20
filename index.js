@@ -8,7 +8,7 @@ app.set('port', (process.env.PORT || 5000));
 app.use(bodyParser.json());
 
 const key = process.env.BOT_KEY || 'BOT_KEY_HERE';
-const botId = process.env.BOT_ID || 0; // BOT ID HERE (it's the part before the colon in the bot key)
+const botId = +process.env.BOT_ID || 0; // BOT ID HERE (it's the part before the colon in the bot key)
 const maxVoice = process.env.MAX_VOICE || 10;
 const maxVideo = process.env.MAX_VIDEO || 10;
 const banTime = process.env.BAN_TIME || 1;
