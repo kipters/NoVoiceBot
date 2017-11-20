@@ -9,9 +9,9 @@ app.use(bodyParser.json());
 
 const key = process.env.BOT_KEY || 'BOT_KEY_HERE';
 const botId = +process.env.BOT_ID || 0; // BOT ID HERE (it's the part before the colon in the bot key)
-const maxVoice = process.env.MAX_VOICE || 10;
-const maxVideo = process.env.MAX_VIDEO || 10;
-const banTime = process.env.BAN_TIME || 1;
+const maxVoice = +process.env.MAX_VOICE || 10;
+const maxVideo = +process.env.MAX_VIDEO || 10;
+const banTime = +process.env.BAN_TIME || 1;
 const infoMsg = process.env.INFO_MSG || 'Make me admin so I can ban whoever uses voice or video messages';
 const privMsg = process.env.PRIV_MSG || 'This bot only works in groups. You can find the source code [here](https://github.com/kipters/NoVoiceBot).\n\n_Pull requests are welcome._';
 
