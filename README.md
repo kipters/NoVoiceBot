@@ -22,13 +22,13 @@ You **MUST** configure two environment variables:
 
 Optionally you can configure the optional environment variables:
 
-| var         | description
-|-------------|-------------
-| `MAX_VOICE` | Maximum allowed duration for voice messages. Set it to `-1` to allow any duration.
-| `MAX_VIDEO` | Maximum allowed duration for video messages. Set it to `-1` to allow any duration.
-| `BAN_TIME`  | Ban duration in seconds. As per [Telegram specifications](https://core.telegram.org/bots/api#kickchatmember), a time under 30 seconds or over 366 days is considered a **permanent** ban.
-| `INFO_MSG`  | What the bot says after joining a new group
-| `PRIV_MSG`  | What the bot says in private conversations
+| var         | default      | description
+|-------------|--------------|-------------
+| `MAX_VOICE` | 10           | Maximum allowed duration for voice messages. Set it to `-1` to allow any duration.
+| `MAX_VIDEO` | 10           | Maximum allowed duration for video messages. Set it to `-1` to allow any duration.
+| `BAN_TIME`  | 1            | Ban duration in seconds. As per [Telegram specifications](https://core.telegram.org/bots/api#kickchatmember), a time under 30 seconds or over 366 days is considered a **permanent** ban.
+| `INFO_MSG`  | index.js#L15 | What the bot says after joining a new group
+| `PRIV_MSG`  | index.js#L16 | What the bot says in private conversations
 
 ## License
 
